@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alumnos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <!-- Código del encabezado (header) omitido por brevedad -->
+    </header>
+
+    <div class="contacto" id="contacto">
+        <div class="contact-container">
+            <h2>Lista de Alumnos</h2>
+            <table id="tabla-estudiantes">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Teléfono</th>
+                        <th>Correo Electrónico</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-estudiantesBody">
+                    <!-- Aquí se llenarán los datos de los alumnos dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script JavaScript para obtener y mostrar datos de la API -->
+    <script src="js/crud-alumnos-fetch.js"></script>
+
+</body>
+</html>

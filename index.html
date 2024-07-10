@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Habilidades</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-logo">
+            <a href="#">
+                <img src="img/Logo.jpg" alt="">
+            </a>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#autogestion">Autogestión</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a href="#about-us" class="nav-btn">Descubrenos</a>
+
+        <div class="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-dropdown">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#autogestion">Autogestíon</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-left">
+            <h1>Bienvenido a tu portal de gestión favorito!</h1>
+            <p>
+                En este espacio digital, te damos la bienvenida a una experiencia única donde podrás acceder fácilmente
+                a todos los recursos necesarios para tu vida universitaria.
+            </p>
+
+            <a href="#autogestion">Inicia tu camino</a>
+        </div>
+
+        <div class="hero-right">
+            <img src="img/hero.img.jpg" alt="Students image">
+        </div>
+    </div>
+    <div class="about-us" id="about-us">
+        <section class="about-container">
+            <h2>Sobre nosotros</h2>
+            <hr>
+            <p class="text">
+                En nuestra sección de autogestión universitaria, tú tienes el control. Con herramientas intuitivas y
+                personalizadas, podrás gestionar tu experiencia académica de forma eficiente. Desde inscribirte en
+                cursos hasta revisar calificaciones y programar asesorías, todo está al alcance de un clic para tu éxito
+                universitario.
+            </p>
+            <a href="#autogestion">Autogestión</a>
+
+        </section>
+    </div>
+
+    <section class="autogestion" id="autogestion">
+        <h2>Portales de Autogestión</h2>
+        <hr>
+        <p>
+            En nuestra sección de autogestión, ponemos el control en tus manos. Con herramientas intuitivas y funciones
+            personalizadas, te ofrecemos la capacidad de gestionar tu experiencia universitaria de manera eficiente y
+            conveniente. Desde la inscripción en cursos hasta la consulta de calificaciones y la programación de
+            asesorías, nuestro sistema te brinda acceso rápido y fácil a todos los servicios que necesitas para tener
+            éxito en tu trayectoria académica.</p>
+    </section>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="img/materias.jpg" alt="">
+            <div class="card-content">
+                <h3>Pre-Inscribete</h3>
+                <p>Completa tu preinscripción hoy mismo para acceder a una experiencia de aprendizaje única y de alta calidad. 
+                    No te pierdas la oportunidad de crecer y alcanzar tus metas académicas con nosotros. </p>
+                <a href="Inscripcion.html" class="btn">Inscribirse</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/carpetas.jpg" alt="">
+            <div class="card-content">
+                <h3>¿Quien mas me acompaña?</h3>
+                <p>¿Te gustaría saber quiénes podrían ser tus compañeros de curso? 
+                    Conoce a las personas con intereses similares que están listas para aprender y colaborar contigo.</p>
+                <a href="listado.html" class="btn">Ver mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/examenes.jpg" alt="">
+            <div class="card-content">
+                <h3>Me voy</h3>
+                <p>Lamentamos que estés considerando darte de baja de la preinscripción.
+                     Si decides no continuar, por favor infórmanos para que podamos liberar tu lugar para otro estudiante interesado.</p>
+                <a href="baja.html" class="btn">Cancelar Preinscripción</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/notas.jpg" alt="">
+            <div class="card-content">
+                <h3>Consulta de notas</h3>
+                <p>En nuestro portal de autogestión universitario, te brindamos la herramienta necesaria para consultar
+                    tus calificaciones de forma rápida y sencilla.</p>
+                <a href="" class="btn">Consultar</a>
+            </div>
+        </div>
+    </div>
+    <div class="contacto" id="contacto">
+        <div class="contact-container">
+            <form id="contactForm">
+                <h2>Contacto</h2>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
