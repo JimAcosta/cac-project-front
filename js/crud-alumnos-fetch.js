@@ -16,8 +16,7 @@ async function fetchData(url, method, data = null) {
         return await response.json();
     } catch (error) {
         console.error('Error en la solicitud:', error);
-        alert('Ocurrió un error al obtener los datos. Por favor, inténtalo nuevamente.');
-        throw error; // Re-lanzar el error para que sea manejado en el lugar donde se llama fetchData
+        throw error; 
     }
 }
 
@@ -39,7 +38,6 @@ async function showAlumnos() {
             tableBody.insertAdjacentHTML('beforeend', tr);
         });
     } catch (error) {
-        console.error('Error al mostrar alumnos:', error);
     }
 }
 
@@ -59,7 +57,7 @@ async function addAlumno(event) {
         if (result) {
             alert('Alumno registrado exitosamente');
             form.reset();
-            await showAlumnos();  // Actualizar la lista de alumnos después de agregar uno nuevo
+            await showAlumnos();
         }
     } catch (error) {
         console.error('Error al registrar alumno:', error);
@@ -87,11 +85,9 @@ async function deleteAlumno(event) {
         if (result.message) {
             alert(result.message);
             form.reset();
-            //await showAlumnos();  // Actualizar la lista de alumnos después de eliminar uno
         }
     } catch (error) {
         console.error('Error al eliminar alumno:', error);
-        alert('Ocurrió un error al eliminar el alumno. Por favor, inténtalo nuevamente.');
     }
 }
 
