@@ -1,4 +1,4 @@
-const BASEURL = 'http://127.0.0.1:5000';
+const BASEURL = 'https://project-cac-api.onrender.com';
 
 async function fetchData(url, method, data = null) {
     const options = {
@@ -22,7 +22,7 @@ async function fetchData(url, method, data = null) {
 
 async function showAlumnos() {
     try {
-        const url = `${BASEURL}/api/alumnos/?t=${new Date().getTime()}`;
+        const url = `${BASEURL}/?t=${new Date().getTime()}`;
         const alumnos = await fetchData(url, 'GET');
         const tableBody = document.querySelector('#tabla-estudiantes tbody');
         tableBody.innerHTML = ''; 
@@ -53,7 +53,7 @@ async function addAlumno(event) {
     };
 
     try {
-        const result = await fetchData(`${BASEURL}/api/alumnos/add`, 'POST', data);
+        const result = await fetchData(`${BASEURL}/add`, 'POST', data);
         if (result) {
             alert('Alumno registrado exitosamente');
             form.reset();
@@ -77,7 +77,7 @@ async function deleteAlumno(event) {
     const email = form.correo.value;
 
     try {
-        const url = `${BASEURL}/api/alumnos/delete/${encodeURIComponent(email)}`; // Codificar el correo electrónico en la URL
+        const url = `${BASEURL}/delete/${encodeURIComponent(email)}`; // Codificar el correo electrónico en la URL
         console.log('URL de la solicitud DELETE:', url);
         
         const result = await fetchData(url, 'DELETE');
